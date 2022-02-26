@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Flix.xcodeproj">
+      location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:">
+      location = "group:/Users/srujanjoshi/Development/Flix/screencapturegif">
+   </FileRef>
+   <FileRef
+      location = "group:Flix.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

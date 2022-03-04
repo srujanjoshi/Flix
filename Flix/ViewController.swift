@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     @IBOutlet weak var tableView: UITableView!
     
+
     var movies = [[String:Any]]()
 
     override func viewDidLoad() {
@@ -61,6 +62,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Find the movie that was tapped on
+        let cell = sender as! UITableViewCell
+        let index = tableView.indexPath(for: cell)!
+        let movie = movies[index.row]
+        
+        
+        //Pass this movie to the MovieDetailsViewController
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        //When we transition to the Movie Details Pop-up, deselect the current cell
+        tableView.deselectRow(at: index, animated: true)
     }
 
 

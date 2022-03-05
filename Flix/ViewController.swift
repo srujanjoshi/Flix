@@ -34,7 +34,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere
                     self.movies = dataDictionary["results"] as! [[String:Any]]
-                    print(self.movies[0])
                     // TODO: Reload your table view data
                     self.tableView.reloadData()
              }

@@ -20,7 +20,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="Simulator Screen Recording - iPhone 13 - 2022-03-04 at 22.00.06.gif" width=250><br>
 
 ### Notes
 I think it was kind of annoying finding the exact parameters in the many Storyboard menu options to tweak the Grid Layout in order to get it looking like how I wanted it to. 
